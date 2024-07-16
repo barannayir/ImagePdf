@@ -1,0 +1,21 @@
+﻿@model ImageUpload
+
+<form asp-action="Upload" asp-controller="Home" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="Image">Görsel Yükle:</label>
+        <input type="file" id="Image" name="Image" accept="image/*" />
+    </div>
+    <div>
+        <label for="Scale">Büyütme Oranı:</label>
+        <select id="Scale" name="Scale">
+            <option value="100">100%</option>
+            <option value="150">150%</option>
+            <option value="200">200%</option>
+            <option value="250">250%</option>
+            <option value="300">300%</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">PDF Olarak Kaydet</button>
+    </div>
+</form>
